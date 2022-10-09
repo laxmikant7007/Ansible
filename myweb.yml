@@ -8,3 +8,9 @@
              
                    name: apache2
                    state: present 
+
+          - name: i want start/stop on ubuntu
+            service:
+
+                   name: apache2
+                   state: stopped        
