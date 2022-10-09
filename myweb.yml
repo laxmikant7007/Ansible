@@ -7,10 +7,14 @@
             apt:
              
                    name: apache2
-                   state: present 
+                   state: present
+
+            when: ansible_os_family=="Debian"  
 
           - name: i want start/stop on ubuntu
             service:
 
                    name: apache2
-                   state: stopped        
+                   state: stopped   
+
+            when: ansible_os_family=="Debian"            
